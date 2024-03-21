@@ -1,1 +1,1328 @@
-test2
+
+<!DOCTYPE html>
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>Totara evergreen-20240226 development site: Administration: Plugins: App installer: Manage apps</title>
+    <link rel="shortcut icon" href="https://totara.au.ngrok.io/theme/image.php/ventura/theme/1710997848/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Totara, Totara evergreen-20240226 development site: Administration: Plugins: App installer: Manage apps" />
+<link rel="stylesheet" type="text/css" href="https://totara.au.ngrok.io/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://totara.au.ngrok.io/theme/styles.php/ventura/1710997848/all/notenant" onerror="(loadErrors=window.loadErrors||[]).push(event)" />
+<link rel="stylesheet" type="text/css" href="https://totara.au.ngrok.io/totara/tui/styles.php/ventura/-1/d/ltr/tui/notenant" onerror="(loadErrors=window.loadErrors||[]).push(event)" />
+<link rel="stylesheet" type="text/css" href="https://totara.au.ngrok.io/totara/tui/styles.php/ventura/-1/d/ltr/theme_ventura/notenant" onerror="(loadErrors=window.loadErrors||[]).push(event)" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/totara.au.ngrok.io","sesskey":"pzcNboe8AF","loadingicon":"https:\/\/totara.au.ngrok.io\/theme\/image.php\/ventura\/core\/1710997848\/i\/loading_small","themerev":"1710997848","slasharguments":1,"theme":"ventura","jsrev":-1,"admin":"admin","svgicons":true,"usertimezone":"Pacific\/Auckland","contextid":1,"currentlanguage":"en","developerdebug":true};JS_ENV = "development";_pageConfig = {"wwwroot":"https:\/\/totara.au.ngrok.io","sesskey":"pzcNboe8AF","rev":{"js":-1,"theme":1710997848},"theme":{"name":"ventura"},"timezone":{"user":"Pacific\/Auckland","server":"Pacific\/Auckland"},"context":{"id":1},"locale":{"language":"en","debugstringids":false},"pageurl":"","xstateInspect":false};window.getPageConfig = function() { return window._pageConfig; };var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":true,"base":"https:\/\/totara.au.ngrok.io\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/totara.au.ngrok.io\/theme\/yui_combo.php?","combine":false,"filter":"RAW","insertBefore":"firstthemesheet","groups":{"yui-patched":{"combine":true,"root":"3.17.2_2\/","patterns":{"dom-core":{"group":"yui-patched"}},"modules":{"dom-core":[]}},"yui2":{"base":"https:\/\/totara.au.ngrok.io\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/totara.au.ngrok.io\/theme\/yui_combo.php?","combine":false,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/totara.au.ngrok.io\/theme\/yui_combo.php?m\/-1\/","combine":false,"comboBase":"https:\/\/totara.au.ngrok.io\/theme\/yui_combo.php?","ext":false,"root":"m\/-1\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":"DEBUG","modules":{"moodle-core-jqueryajaxhandler":{"requires":["base"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-jquerybehat":{"requires":[]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-formautosubmit":{"requires":["base","event-key"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-toolboxes":{"requires":["node","base","event-key","node","io","moodle-course-coursebase","moodle-course-util"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_audience-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_hierarchy_organisation-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_hierarchy_position-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_language-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_time_since_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_facetoface-signupform":{"requires":["base","node","io-base","moodle-core-notification-dialogue","moodle-core-notification-alert"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","moodle-editor_atto-dompurify","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-totara_program-categoryexpander":{"requires":["node","event-key"]},"moodle-totara_reportbuilder-graphicalreporting":{"requires":[]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/totara.au.ngrok.io\/lib\/yuilib\/gallery\/","combine":false,"comboBase":"https:\/\/totara.au.ngrok.io\/theme\/yui_combo.php?","ext":false,"root":"gallery\/-1\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/totara.au.ngrok.io\/lib\/javascript.php\/-1\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/totara.au.ngrok.io\/lib\/javascript.php\/-1\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"core_dndupload":{"name":"core_dndupload","fullpath":"https:\/\/totara.au.ngrok.io\/lib\/javascript.php\/-1\/lib\/form\/dndupload.js","requires":["node","event","json","core_filepicker"]}},"logLevel":"debug"};
+M.yui.loader = {modules: {}};
+window.addEventListener('DOMContentLoaded',function(){function s(){s=function(){},alert("A network error occurred while loading the page. Please refresh the page and try again.")};window.loadErrors&&loadErrors.length&&s(),loadErrors={push:s}});
+
+//]]>
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+</head>
+<body  id="page-admin-tool-appinstaller-index" class="format-site admin path-admin path-admin-tool path-admin-tool-appinstaller chrome dir-ltr lang-en yui-skin-sam yui3-skin-sam totara-au-ngrok-io pagelayout-admin course-1 context-1 legacy has-region-side-pre used-region-side-pre side-pre-only layout-option-fluid">
+<div class="skiplinks">
+    <a href="#maincontent" class="skip">Skip to main content</a>
+</div><script type="text/javascript" src="https://totara.au.ngrok.io/theme/yui_combo.php?rollup/3.17.2_2/yui-moodlesimple.js"></script><script src="https://totara.au.ngrok.io/theme/jquery.php/core/jquery-3.6.0.js" onerror="(loadErrors=window.loadErrors||[]).push(event)"></script>
+<script src="https://totara.au.ngrok.io/theme/jquery.php/core/jquery-migrate-3.0.0.js" onerror="(loadErrors=window.loadErrors||[]).push(event)"></script>
+<script src="https://totara.au.ngrok.io/lib/javascript.php/-1/lib/javascript-static.js" onerror="(loadErrors=window.loadErrors||[]).push(event)"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+        
+                    
+
+<!-- Content -->
+<div id="page" class="container-fluid">
+    <div id="page-content">
+
+                <div class="row">
+            <div id="region-main" class="col-sm-12 col-md-9 col-md-push-3">
+                <span class="notifications" id="user-notifications"></span>                <div role="main"><span id="maincontent"></span><div>
+  <h2>Apps</h2>
+  <div>
+    <form method="get" action="upload.php">
+      <input type="submit" value="Upload app" />
+    </form>
+  </div>
+  <table class="generaltable">
+    <tr>
+      <th>&nbsp;</th>
+      <th>App name</th>
+      <th>Version</th>
+      <th>Status</th>
+      <th>Time installed</th>
+      <th>Actions</th>
+    </tr>
+    <tr>
+      <td><img src="https://totara.au.ngrok.io/pluginfile.php/1/tool_appinstaller/tool_appinstaller_app/5/logo.png" width="20" height="20" alt="Icon for Page content example app" /></td>
+      <td>Page content example app</td>
+      <td>1.0.0</td>
+      <td>Enabled</td>
+      <td>Thursday, 21 March 2024, 5:05 PM</td>
+      <td><a href="delete.php?id=5">Delete</a></td>
+    </tr>
+  </table>
+
+</div></div>                                            </div>
+            <div id="block-region-side-pre" class="col-sm-6 col-md-3 col-md-pull-9 block-region" data-droptarget="1" data-blockregion="side-pre">
+    <a class="skip-block" href="#sb-2">Skip Plugins</a> 
+
+<div id="inst2" class="block_admin_subnav  block" role="region" data-block="admin_subnav" data-instanceid="2" aria-labelledby="instance-2-header" data-dockable="1">
+
+    <div class="header block-header">
+        <div class="title block-title" data-dock-title="Plugins">
+            <div class="block_action" data-collapsible="1"></div>
+                <h2 id="instance-2-header" data-movetext="true">Plugins</h2>
+        </div>
+    </div>
+
+
+<div class="content block-content">
+    <ul class="block_tree list" role="tree">
+        <li  class="type_setting depth_1 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/plugins.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Plugins overview</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd4_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Activity modules</span></p>
+            <ul id="random65fbc19ac89dd4_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/modules.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage activities</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=managemodulescommon"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Common activity settings</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd7_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Assignment</span></p>
+            <ul id="random65fbc19ac89dd7_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_3 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=modsettingassign"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Assignment settings</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_3 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd9_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Submission plugins</span></p>
+            <ul id="random65fbc19ac89dd9_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_4 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/mod/assign/adminmanageplugins.php?subtype=assignsubmission"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage assignment submission plugins</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_4 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=assignsubmission_file"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">File submissions</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_4 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=assignsubmission_onlinetext"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Online text submissions</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_3 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd13_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Feedback plugins</span></p>
+            <ul id="random65fbc19ac89dd13_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_4 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/mod/assign/adminmanageplugins.php?subtype=assignfeedback"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage assignment feedback plugins</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_4 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=assignfeedback_comments"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Feedback comments</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_4 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=assignfeedback_editpdf"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Annotate PDF</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_4 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=assignfeedback_file"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">File feedback</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_4 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=assignfeedback_offline"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Offline grading worksheet</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=modsettingbook"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Book</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=modsettingcertificate"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Certificate</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=modsettingchat"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Chat</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=modsettingdata"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Database</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=modsettingfacetoface"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Seminar</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=modsettingfeedback"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Feedback</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=modsettingfolder"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Folder</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=modsettingforum"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Forum</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=modsettingglossary"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Glossary</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd28_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">H5P</span></p>
+            <ul id="random65fbc19ac89dd28_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_3 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=modsettinghvp"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">H5P Settings</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_3 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/mod/hvp/library_list.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">H5P Libraries</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=modsettingimscp"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">IMS content package</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=modsettinglabel"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Label</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=modsettinglesson"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Lesson</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd34_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">External tool</span></p>
+            <ul id="random65fbc19ac89dd34_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_3 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/mod/lti/toolconfigure.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage tools</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=modsettingpage"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Page</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=modsettingquiz"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Quiz</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=modsettingresource"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">File</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=modsettingscorm"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">SCORM package</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=modsettingurl"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">URL</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd41_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Admin tools</span></p>
+            <ul id="random65fbc19ac89dd41_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/tools.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage admin tools</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=tool_recyclebin"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Recycle bin</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd44_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Antivirus plugins</span></p>
+            <ul id="random65fbc19ac89dd44_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=manageantiviruses"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage antivirus plugins</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="true" aria-owns="random65fbc19ac89dd46_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="expanded"
+      class="flex-icon ft-fw ft tfont-var-caret-down-fill"
+      ></span><span tabindex="-1">App installer</span></p>
+            <ul id="random65fbc19ac89dd46_group" role="group">
+        <li  class="type_setting depth_2 item_with_icon current_branch" role="presentation">
+            <p role="treeitem" class="tree_item hasicon active_tree_node"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/tool/appinstaller/index.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage apps</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd48_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Authentication</span></p>
+            <ul id="random65fbc19ac89dd48_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=manageauths"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage authentication</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=authsettingmanual"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manual accounts</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/auth/ssosaml/plugin_settings.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">SAML 2.0 (SSO)</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd52_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Availability restrictions</span></p>
+            <ul id="random65fbc19ac89dd52_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/tool/availabilityconditions/"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage restrictions</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd54_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Blocks</span></p>
+            <ul id="random65fbc19ac89dd54_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/blocks.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage blocks</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=blocksettingactivity_results"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Activity results</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=blocksettingcourse_list"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Courses</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=blocksettingcourse_overview"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Course overview</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=blocksettinggaccess"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Google Apps</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=blocksettinghtml"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">HTML</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=blocksettingonline_users"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Online users</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=blocksettingrss_client"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Remote RSS feeds</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=blocksettingsection_links"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Section links</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=blocksettingtotara_alerts"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Alerts</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=blocksettingtotara_recommendations"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Recommended for you</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=blocksettingtotara_stats"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Statistics</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=blocksettingtotara_tasks"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Tasks</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd68_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Business intelligence</span></p>
+            <ul id="random65fbc19ac89dd68_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/integrations/bi/managebi.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage business intelligence</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd70_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Caching</span></p>
+            <ul id="random65fbc19ac89dd70_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/cache/admin.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Configuration</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/cache/testperformance.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Test performance</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd73_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Cache stores</span></p>
+            <ul id="random65fbc19ac89dd73_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_3 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=cachestore_apcu_settings"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">APC user cache (APCu)</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_3 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=cachestore_memcached_settings"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Memcached</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_3 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=cachestore_mongodb_settings"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">MongoDB</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_3 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=cachestore_redis_settings"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Redis</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd78_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Content marketplace</span></p>
+            <ul id="random65fbc19ac89dd78_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/totara/contentmarketplace/marketplaces.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage content marketplaces</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd80_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Course formats</span></p>
+            <ul id="random65fbc19ac89dd80_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=manageformats"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage course formats</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=formatsettingsingleactivity"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Single activity format</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd83_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Data formats</span></p>
+            <ul id="random65fbc19ac89dd83_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=managedataformats"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage data formats</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd85_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Enrolments</span></p>
+            <ul id="random65fbc19ac89dd85_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=manageenrols"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage enrol plugins</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=enrolsettingscohort"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Audience sync</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=enrolsettingsguest"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Guest access</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=enrolsettingsmanual"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manual enrolments</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=enrolsettingsself"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Self enrolment</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=enrolsettingstotara_program"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Program</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd92_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Filters</span></p>
+            <ul id="random65fbc19ac89dd92_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/filters.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage filters</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=commonfiltersettings"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Common filter settings</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=filtersettingmediaplugin"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Multimedia plugins</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd96_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Licences</span></p>
+            <ul id="random65fbc19ac89dd96_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=managelicenses"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage licences</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd98_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Local plugins</span></p>
+            <ul id="random65fbc19ac89dd98_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/localplugins.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage local plugins</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd100_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Logging</span></p>
+            <ul id="random65fbc19ac89dd100_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=managelogging"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage log stores</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=logsettingstandard"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Standard log</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd103_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Machine learning settings</span></p>
+            <ul id="random65fbc19ac89dd103_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/machine_learning.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage machine learning plugins</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=machine_learning_environment"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Environment configuration</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd106_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Media players</span></p>
+            <ul id="random65fbc19ac89dd106_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=managemediaplayers"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage media players</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=mediasettingvideojs"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">VideoJS player</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd109_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Message outputs</span></p>
+            <ul id="random65fbc19ac89dd109_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/message.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage message outputs</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/message/defaultoutputs.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Default message outputs</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=messagesettingjabber"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Jabber</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=messagesettingtotara_airnotifier"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Totara AirNotifier</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd114_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Mobile</span></p>
+            <ul id="random65fbc19ac89dd114_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=totaramobilesettings"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Mobile settings</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=totaramobileauthentication"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Mobile authentication</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=totaramobiletheme"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Mobile theme</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd118_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Multi-factor authentication</span></p>
+            <ul id="random65fbc19ac89dd118_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=mfa_settings"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage multi-factor authentication</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd120_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Plagiarism</span></p>
+            <ul id="random65fbc19ac89dd120_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/plagiarism.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage plagiarism plugins</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd122_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Portfolios</span></p>
+            <ul id="random65fbc19ac89dd122_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/portfolio.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage portfolios</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=manageportfolioscommon"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Common portfolio settings</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd125_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Question behaviours</span></p>
+            <ul id="random65fbc19ac89dd125_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/qbehaviours.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage question behaviours</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd127_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Question types</span></p>
+            <ul id="random65fbc19ac89dd127_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/qtypes.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage question types</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=qdefaultsetting"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Question preview defaults</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=qtypesettingmultichoice"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Multiple choice</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd131_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Reports</span></p>
+            <ul id="random65fbc19ac89dd131_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/reports.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage reports</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=reportcompletion"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Course completion</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=reportprogress"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Activity completion</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd135_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Repositories</span></p>
+            <ul id="random65fbc19ac89dd135_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/repository.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage repositories</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=managerepositoriescommon"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Common repository settings</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/repository.php?sesskey=pzcNboe8AF&amp;action=edit&amp;repos=areafiles"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Embedded files</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/repository.php?sesskey=pzcNboe8AF&amp;action=edit&amp;repos=local"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Server files</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/repository.php?sesskey=pzcNboe8AF&amp;action=edit&amp;repos=recent"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Recent files</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/repository.php?sesskey=pzcNboe8AF&amp;action=edit&amp;repos=upload"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Upload a file</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/repository.php?sesskey=pzcNboe8AF&amp;action=edit&amp;repos=user"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Private files</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/repository.php?sesskey=pzcNboe8AF&amp;action=edit&amp;repos=wikimedia"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Wikimedia</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd144_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Search</span></p>
+            <ul id="random65fbc19ac89dd144_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=manageglobalsearch"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage global search</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/searchareas.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Search areas</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=searchsolr"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Solr</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd148_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Tabular exports</span></p>
+            <ul id="random65fbc19ac89dd148_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=tabexportsettingpdflandscape"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">PDF landscape export</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=tabexportsettingpdfportrait"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">PDF portrait export</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd151_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Text editors</span></p>
+            <ul id="random65fbc19ac89dd151_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=manageeditors"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage editors</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd153_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Atto HTML editor</span></p>
+            <ul id="random65fbc19ac89dd153_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_3 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=editorsettingsatto"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Atto toolbar settings</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_3 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=atto_collapse_settings"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Collapse toolbar settings</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_3 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=atto_equation_settings"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Equation editor settings</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_3 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=atto_table_settings"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Table settings</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd158_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Totara Support</span></p>
+            <ul id="random65fbc19ac89dd158_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=local_support"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Totara Support</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd160_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Virtual meetings</span></p>
+            <ul id="random65fbc19ac89dd160_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=virtualmeeting_msteams"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Microsoft Teams</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=virtualmeeting_zoom"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Zoom Meeting</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+        <li  class="type_setting depth_1 contains_branch" role="presentation">
+            <p role="treeitem" aria-expanded="false" aria-owns="random65fbc19ac89dd163_group" class="tree_item branch"><span aria-hidden="true" data-flex-icon="collapsed"
+      class="flex-icon ft-fw ft tfont-var-caret-right-fill ft-flip-rtl"
+      ></span><span tabindex="-1">Web services</span></p>
+            <ul id="random65fbc19ac89dd163_group" role="group" aria-hidden="true">
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=webservicesoverview"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Overview</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/webservice/documentation.php"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">API Documentation</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=externalservices"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">External services</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=webserviceprotocols"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage protocols</span></a></p>
+            
+        </li>
+        <li  class="type_setting depth_2 item_with_icon" role="presentation">
+            <p role="treeitem" class="tree_item hasicon"><a tabindex="-1" href="https://totara.au.ngrok.io/admin/settings.php?section=webservicetokens"><span aria-hidden="true" data-flex-icon="core|i/settings"
+      class="flex-icon ft-fw ft tfont-var-gear"
+      ></span><span class="item-content-wrap">Manage tokens</span></a></p>
+            
+        </li>
+</ul>
+        </li>
+</ul>
+
+</div>
+
+</div>
+
+
+<span id="sb-2" class="skip-block-to"></span>
+</div>                    </div>
+        
+    </div>
+</div>
+
+<!-- Footer -->
+<footer id="page-footer" class="page-footer">
+    <div class="container-fluid">
+        <div class="page-footer-main-content">
+            <div id="course-footer"></div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://totara.au.ngrok.io/totara/tui/javascript.php/-1/d/vendors" onerror="(loadErrors=window.loadErrors||[]).push(event)"></script>
+<script src="https://totara.au.ngrok.io/totara/tui/javascript.php/-1/d/tui" onerror="(loadErrors=window.loadErrors||[]).push(event)"></script>
+<script src="https://totara.au.ngrok.io/totara/tui/javascript.php/-1/d/theme_ventura" onerror="(loadErrors=window.loadErrors||[]).push(event)"></script>
+<script src="https://totara.au.ngrok.io/lib/requirejs/config.php/-1/config.js" onerror="(loadErrors=window.loadErrors||[]).push(event)"></script>
+<script src="https://totara.au.ngrok.io/lib/javascript.php/-1/lib/requirejs/require.js" onerror="(loadErrors=window.loadErrors||[]).push(event)"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.util.js_pending('core-autoinitialise');
+require(['core/autoinitialise'], function(ai) {
+    ai.scan().then(function() {
+        M.util.js_complete('core-autoinitialise');
+    });
+});
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.addLanguage('en', {
+  "Audio Player": "Audio Player",
+  "Video Player": "Video Player",
+  "Play": "Play",
+  "Pause": "Pause",
+  "Replay": "Replay",
+  "Current Time": "Current Time",
+  "Duration": "Duration",
+  "Remaining Time": "Remaining Time",
+  "Stream Type": "Stream Type",
+  "LIVE": "LIVE",
+  "Seek to live, currently behind live": "Seek to live, currently behind live",
+  "Seek to live, currently playing live": "Seek to live, currently playing live",
+  "Loaded": "Loaded",
+  "Progress": "Progress",
+  "Progress Bar": "Progress Bar",
+  "progress bar timing: currentTime={1} duration={2}": "{1} of {2}",
+  "Fullscreen": "Fullscreen",
+  "Non-Fullscreen": "Exit Fullscreen",
+  "Mute": "Mute",
+  "Unmute": "Unmute",
+  "Playback Rate": "Playback Rate",
+  "Subtitles": "Subtitles",
+  "subtitles off": "subtitles off",
+  "Captions": "Captions",
+  "captions off": "captions off",
+  "Chapters": "Chapters",
+  "Descriptions": "Descriptions",
+  "descriptions off": "descriptions off",
+  "Audio Track": "Audio Track",
+  "Volume Level": "Volume Level",
+  "You aborted the media playback": "You aborted the media playback",
+  "A network error caused the media download to fail part-way.": "A network error caused the media download to fail part-way.",
+  "The media could not be loaded, either because the server or network failed or because the format is not supported.": "The media could not be loaded, either because the server or network failed or because the format is not supported.",
+  "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.",
+  "No compatible source was found for this media.": "No compatible source was found for this media.",
+  "The media is encrypted and we do not have the keys to decrypt it.": "The media is encrypted and we do not have the keys to decrypt it.",
+  "Play Video": "Play Video",
+  "Close": "Close",
+  "Close Modal Dialog": "Close Modal Dialog",
+  "Modal Window": "Modal Window",
+  "This is a modal window": "This is a modal window",
+  "This modal can be closed by pressing the Escape key or activating the close button.": "This modal can be closed by pressing the Escape key or activating the close button.",
+  ", opens captions settings dialog": ", opens captions settings dialog",
+  ", opens subtitles settings dialog": ", opens subtitles settings dialog",
+  ", opens descriptions settings dialog": ", opens descriptions settings dialog",
+  ", selected": ", selected",
+  "captions settings": "captions settings",
+  "subtitles settings": "subtitles settings",
+  "descriptions settings": "descriptions settings",
+  "Text": "Text",
+  "White": "White",
+  "Black": "Black",
+  "Red": "Red",
+  "Green": "Green",
+  "Blue": "Blue",
+  "Yellow": "Yellow",
+  "Magenta": "Magenta",
+  "Cyan": "Cyan",
+  "Background": "Background",
+  "Window": "Window",
+  "Transparent": "Transparent",
+  "Semi-Transparent": "Semi-Transparent",
+  "Opaque": "Opaque",
+  "Font Size": "Font Size",
+  "Text Edge Style": "Text Edge Style",
+  "None": "None",
+  "Raised": "Raised",
+  "Depressed": "Depressed",
+  "Uniform": "Uniform",
+  "Dropshadow": "Dropshadow",
+  "Font Family": "Font Family",
+  "Proportional Sans-Serif": "Proportional Sans-Serif",
+  "Monospace Sans-Serif": "Monospace Sans-Serif",
+  "Proportional Serif": "Proportional Serif",
+  "Monospace Serif": "Monospace Serif",
+  "Casual": "Casual",
+  "Script": "Script",
+  "Small Caps": "Small Caps",
+  "Reset": "Reset",
+  "restore all settings to the default values": "restore all settings to the default values",
+  "Done": "Done",
+  "Caption Settings Dialog": "Caption Settings Dialog",
+  "Beginning of dialog window. Escape will cancel and close the window.": "Beginning of dialog window. Escape will cancel and close the window.",
+  "End of dialog window.": "End of dialog window.",
+  "{1} is loading.": "{1} is loading.",
+  "Exit Picture-in-Picture": "Exit Picture-in-Picture",
+  "Picture-in-Picture": "Picture-in-Picture",
+  "No content": "No content"
+});
+
+    });
+});;
+
+require(['jquery'], function($) {
+    $('#single_select65fbc19ac89dd2').change(function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f65fbc19ac89dd1').submit();
+        }
+    });
+});
+;
+require(["block_settings/settingsblock"], function(amd) { amd.init("3", null); });;
+require(["block_admin_subnav/subnavblock"], function(amd) { amd.init("2"); });;
+
+require(['core/yui'], function(Y) {
+    M.util.init_skiplink(Y);
+});
+;
+
+require(['jquery', 'message_popup/message_popover_controller'], function($, controller) {
+    var container = $('#nav-message-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['core/yui'], function(Y) {
+    Y.use('moodle-core-actionmenu', function() {
+        M.core.actionmenu.scan();
+    });
+});
+;
+
+            require(['totara_core/totaranav'], function(totaraNav) {
+                totaraNav.init(document.querySelector('.totaraNav'));
+            });
+        ;
+require(["core/blocks"], function(amd) { amd.init({"id":"inst2","title":"Plugins","preference":"block2hidden","tooltipVisible":"Hide Plugins block","tooltipHidden":"Show Plugins block"}); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"trace"}); });
+//]]>
+</script>
+<script src="https://totara.au.ngrok.io/theme/javascript.php/ventura/1710997848/footer" onerror="(loadErrors=window.loadErrors||[]).push(event)"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.util.add_strings({"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","uploadformlimit":"Uploaded file {$a} exceeded the maximum size limit set by the form","droptoupload":"Drop files here to upload","maxfilesreached":"You are allowed to attach a maximum of {$a} file(s) to this item","dndenabled_inbox":"You can drag and drop files here to add them.","fileexists":"There is already a file called {$a}","sizegb":"GB","sizemb":"MB","sizekb":"KB","sizeb":"bytes","maxareabytesreached":"The file (or the total size of several files) is larger than the space remaining in this area.","unknownerror":"Unknown error","morehelp":"More help","loadinghelp":"Loading...","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close"},"repository":{"type":"Type","size":"Size","displayfileiconaslinks":"Display folder with file icons as links","displayfiledetailsintable":"Display folder with file details in a sortable table","displayfiletreeintable":"Display folder as file tree in a series of tables","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select","changedisplay":"Change Display"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","accessdenied":"Access denied","resourcenotfound":"Resource not found","confirmation":"Confirmation"},"error":{"maxbytesfile":"The file {$a->file} is too large. The maximum size you can upload is {$a->size}.","serverconnection":"Error connecting to the server"},"block":{"addtodock":"Move this to the dock","undockitem":"Undock this item","dockblock":"Dock {$a} block","undockblock":"Undock {$a} block","undockall":"Undock all","hidedockpanel":"Hide the dock panel","hidepanel":"Hide panel"},"langconfig":{"thisdirectionvertical":"btt"}});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-core-jqueryajaxhandler",function() {M.core.jqueryajaxhandler.init();
+});
+Y.use("moodle-core-dock-loader",function() {M.core.dock.loader.initLoader();
+});
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+ M.util.js_pending('random65fbc19ac89dd178'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random65fbc19ac89dd178'); });
+})();
+//]]>
+</script>
+</body>
+</html>
